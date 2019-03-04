@@ -9,7 +9,7 @@ def new
 end
 def create
     Place.create(place_params)
-    redirect_to root_path
+ redirect_to root_path
   end
 
   private
