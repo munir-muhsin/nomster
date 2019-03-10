@@ -26,6 +26,7 @@ body {
 .navbar{
   background: image_url('curls.png');
   box-shadow: 2px 5px 5px #2a2a2a;
+ 
 }
 .navbar-inverse .navbar-brand{
   color: #76A4CC;
@@ -66,4 +67,11 @@ blockquote p {
 }
 .clear {
   clear:both;
+}
+.carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
+  max-height: 550px;
+  width: 100%;
+}
+.carousel {
+  box-shadow: 0px 3px 8px #2a2a2a;
 }
