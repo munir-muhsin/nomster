@@ -11,4 +11,8 @@ class Place < ApplicationRecord
   after_validation :geocode 
 
   validates :name, presence: true 
+
+  reverse_geocoded_by :latitude, :longitude
+after_validation :reverse_geocode
+extend Geocoder::Model::ActiveRecord
 end
